@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TenantManagementSystem</string>
+
+    <string name="register_title">Create Account</string>
+    <string name="full_name_hint">Full name</string>
+    <string name="register_email_hint">Email</string>
+    <string name="register_password_hint">Password</string>
+    <string name="register_button">REGISTER</string>
+    <string name="login_link">Already have an account? Log in</string>
+
 </resources>
