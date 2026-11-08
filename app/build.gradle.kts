@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     id("androidx.navigation.safeargs.kotlin")
+
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -48,4 +50,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+
+    // Room: the local database library
+    implementation("androidx.room:room-runtime:2.7.2")
+    implementation("androidx.room:room-ktx:2.7.2")
+    // Generates the Room code (ksp, not implementation)
+    ksp("androidx.room:room-compiler:2.7.2")
 }
